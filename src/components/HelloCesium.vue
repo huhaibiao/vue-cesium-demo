@@ -245,6 +245,7 @@ addCircle(viewer)
   line-height: 30px;
   opacity: 0.9;
   border-radius: 10px;
+  cursor: pointer;
   /* border: 1px solid rgba(0, 145, 255, 0.428); */
   border: 1px solid rgba(249, 250, 251, 0.428);
   color: #fff;
