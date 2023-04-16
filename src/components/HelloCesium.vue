@@ -1,22 +1,8 @@
-<!--
- * @Author: error: git config user.name && git config user.email & please set dead value or install git
- * @Date: 2022-10-01 23:25:47
- * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
- * @LastEditTime: 2022-10-06 17:42:04
- * @FilePath: /vue-cesium-demo/src/components/HelloCesium.vue
- * @Description: 
- * 
- * Copyright (c) 2022 by error: git config user.name && git config user.email & please set dead value or install git, All Rights Reserved. 
--->
 <template>
   <div class="layer-btns">
     <div class="earth0" @click="backOrgin" :class="{ selected: selectBtn === -1 }">原图</div>
-    <div
-      v-for="(item, index) of ['冬', '夏', '春', '秋', '夜']"
-      :key="item + index"
-      @click="addImagery(index)"
-      :class="{ selected: selectBtn === index }"
-    >
+    <div v-for="(item, index) of ['冬', '夏', '春', '秋', '夜']" :key="item + index" @click="addImagery(index)"
+      :class="{ selected: selectBtn === index }">
       {{ `${item}` }}
     </div>
   </div>
@@ -116,7 +102,7 @@ const initViewer = () => {
     }
   })
 
-  viewer.scene.preRender.addEventListener(() => {})
+  viewer.scene.preRender.addEventListener(() => { })
   // viewer.zoomTo(cyl)
   return viewer
 }
@@ -251,7 +237,7 @@ addCircle(viewer)
   /* opacity: 0.75; */
 }
 
-.layer-btns > div {
+.layer-btns>div {
   height: 30px;
   width: 60px;
   background-color: rgba(250, 235, 215, 0.326);
@@ -264,6 +250,7 @@ addCircle(viewer)
   color: #fff;
   font-family: PingFang SC-Medium, PingFang SC;
 }
+
 div.selected {
   border: 1px solid rgba(0, 255, 21, 0.847);
   /* border: 1px solid rgb(0, 255, 21); */

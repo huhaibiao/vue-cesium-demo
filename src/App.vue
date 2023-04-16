@@ -1,8 +1,8 @@
 <!--
  * @Author: error: git config user.name && git config user.email & please set dead value or install git
  * @Date: 2022-10-01 23:12:36
- * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
- * @LastEditTime: 2022-10-14 14:49:57
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2023-04-16 14:53:34
  * @FilePath: /vue-cesium-demo/src/App.vue
  * @Description: 
  * 
@@ -12,21 +12,12 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloCesium from './components/HelloCesium.vue'
-import TodoList from './components/TodoList.vue'
-import HelloWorld from './components/HelloWorld.vue'
+// import TodoList from './components/TodoList.vue'
 </script>
 
 <template>
-  <!-- <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" /> -->
-  <TodoList></TodoList>
+  <HelloCesium></HelloCesium>
+  <!-- <TodoList></TodoList> -->
 </template>
 
 <style scoped>
@@ -35,9 +26,11 @@ import HelloWorld from './components/HelloWorld.vue'
   padding: 1.5em;
   will-change: filter;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
